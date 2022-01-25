@@ -28,6 +28,25 @@ body {
     float: right;
 }
 
+section {
+
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.container h1 {
+    font-size: 5em;
+    padding: 1em 0 .5em 0;
+}
+
+.container h2 {
+    font-size: 2.75em;
+    padding: 1em 0;
+}
+
 /* HEADER */
 
 header {
@@ -70,22 +89,9 @@ header * {
 
 /* PRIMA SEZIONE */
 
-section {
-}
-
 .first {
     background-color: #B4D0E7;
     height: 45em;
-}
-
-.container {
-    width: 1300px;
-    margin: 0 auto;
-}
-
-.container h1{
-    font-size: 5em;
-    padding: 1em 0 .5em 0;
 }
 
 .cntnr.left{
@@ -104,3 +110,36 @@ section {
     width: 70%;
 }
 
+/* SECONDA SEZIONE */
+
+.second {
+    padding-top: 12.5em;
+}
+
+.select {
+    line-height: 1em;
+    margin: 1em 0;
+}
+
+.select > * {
+    vertical-align: middle;
+}
+
+.radio {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+}
+
+.radio:not(:first-child) {
+    margin-left: 2em;
+}
+
+.active {
+    border: 4px solid blue;
+}
+
+.inactive {
+    border: 1px solid grey;
+}
