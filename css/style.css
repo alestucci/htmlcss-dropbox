@@ -8,10 +8,17 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    width: 100em; /* POI LO RIMUOVO */
-    margin: 0 auto;
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
+
+/* LARGHEZZA PER PROVE */
+/* body {
+    width: 100em;
+    margin: 0 auto;
+} */
 
 .blue-btn {
     display: inline-block;
@@ -32,19 +39,39 @@ section {
 
 }
 
-.container {
+.container-wide {
     width: 1300px;
+    margin: 0 auto;
+    padding-top: 4em;
+}
+
+.container-narrow {
+    width: 1100px;
     margin: 0 auto;
 }
 
-.container h1 {
+h1 {
     font-size: 5em;
-    padding: 1em 0 .5em 0;
+    line-height: 1.5em;
 }
 
-.container h2 {
+h2 {
     font-size: 2.75em;
-    padding: 1em 0;
+    line-height: 3em;
+}
+
+h3 {
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+h4 {
+    font-size: 1.25em;
+    line-height: 2.5em;
+}
+
+.italic {
+    font-style: italic;
 }
 
 /* HEADER */
@@ -60,6 +87,7 @@ header * {
 }
 
 .menu {
+    padding: 0 1em;
     width: 100%;
     height: 100%;
 }
@@ -73,8 +101,8 @@ header * {
 .menu ul {
     list-style: none;
     line-height: 5em;
-    margin-left: 2em;
-    margin-right: 2em;
+    /* margin-left: 2em;
+    margin-right: 2em; */
 }
 
 .menu li {
@@ -92,6 +120,10 @@ header * {
 .first {
     background-color: #B4D0E7;
     height: 45em;
+}
+
+.cntnr {
+    margin-top: 2em;
 }
 
 .cntnr.left{
@@ -142,4 +174,64 @@ header * {
 
 .inactive {
     border: 1px solid grey;
+}
+
+.price-list {
+    margin-top: 3em;
+    margin-bottom: 7em;
+}
+
+.card {
+    display: inline-block;
+    width: 20em;
+    height: 1060px;
+}
+
+.card:not(:first-child) {
+    margin-left: 3.75em;
+}
+
+.type {
+    text-align: center;
+    line-height: 3rem;
+    border: 1px solid darkgrey;
+}
+
+.details {
+    height: 100%;
+    border: 1px solid darkgrey;
+    border-top: none;
+    padding: 2em;
+}
+
+.details .blue-btn {
+    display: block;
+    text-align: center;
+}
+
+
+.details ul {
+    list-style-type: "\2713";
+    list-style-image: url(#);
+    margin-left: .8em;
+}
+
+.card-wide {
+    height: 200px;
+    width: calc(20em * 3 + 3.75em * 2 + 9px);
+    border-top: none;
+}
+
+.features {
+    margin: 3em 0;
+}
+
+.features i {
+    display: inline-block;
+}
+
+.features p {
+    display: inline-block;
+    padding-left: 1em;
+    text-indent: -1em;
 }
