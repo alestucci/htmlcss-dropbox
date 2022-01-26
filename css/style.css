@@ -8,23 +8,10 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 /* LARGHEZZA PER PROVE */
-/* body {
-    width: 100em;
-    margin: 0 auto;
-} */
-
-.blue-btn {
-    display: inline-block;
-    color: white;
-    background-color: #0161FF;
-    padding: .5rem 1rem;
+body {
+    /* width: 100em;
+    margin: 0 auto; */
 }
 
 .left {
@@ -35,8 +22,25 @@ html {
     float: right;
 }
 
-section {
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
+.blue-btn {
+    display: inline-block;
+    color: white;
+    background-color: #0161FF;
+    padding: .5rem 1rem;
+}
+
+.white-btn {
+    display: inline-block;
+    color: black;
+    background-color: white;
+    padding: .5rem 1rem;
+    border: 1px solid black;
 }
 
 .container-wide {
@@ -51,7 +55,7 @@ section {
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 4em;
     line-height: 1.5em;
 }
 
@@ -62,7 +66,7 @@ h2 {
 
 h3 {
     font-size: 1.5em;
-    line-height: 1.5em;
+    line-height: 1.25em;
 }
 
 h4 {
@@ -74,11 +78,20 @@ h4 {
     font-style: italic;
 }
 
-.grey {
-    color: grey;
+.underline {
+    text-decoration: underline;
 }
 
-/* HEADER */
+.grey {
+    color: grey;
+    font-size: .9em;
+}
+
+.noborder {
+    border: 0;
+}
+
+/* -----------------------HEADER----------------------- */
 
 header {
     width: 100%;
@@ -119,7 +132,7 @@ header * {
     text-decoration: none;
 }
 
-/* PRIMA SEZIONE */
+/* -----------------------PRIMA SEZIONE----------------------- */
 
 .first {
     background-color: #B4D0E7;
@@ -146,10 +159,10 @@ header * {
     width: 70%;
 }
 
-/* SECONDA SEZIONE */
+/* -----------------------SECONDA SEZIONE----------------------- */
 
 .second {
-    padding-top: 12.5em;
+    padding: 11em 0;
 }
 
 .select {
@@ -182,17 +195,16 @@ header * {
 
 .price-list {
     margin-top: 3em;
-    margin-bottom: 7em;
+    margin-left: -2em;
+    margin-right: -2em;
 }
 
 .card {
     display: inline-block;
-    height: 1305;
-    width: 20em;
-}
-
-.card:not(:first-child) {
-    margin-left: 3.75em;
+    width: 27%;
+    padding-bottom: 4em;
+    vertical-align: top;
+    margin: 0 2em;
 }
 
 .type {
@@ -206,21 +218,24 @@ header * {
 }
 
 .details {
-    /* height: 100%; */
     border: 1px solid darkgrey;
     border-top: none;
     padding: 2em;
 }
 
+.column {
+    height: 75em;
+}
+
 .details .blue-btn {
     display: block;
     text-align: center;
+    margin-bottom: 2em;
 }
 
 .details ul {
     list-style: none;
     margin-left: .8em;
-    padding-bottom: 6em;
 }
 
 .details li {
@@ -239,7 +254,7 @@ header * {
 
 .card-wide {
     height: 200px;
-    width: calc(20em * 3 + 3.75em * 2 + 9px);
+    width: calc(81% + 8em + 6px);
     border-top: none;
 }
 
@@ -247,16 +262,20 @@ header * {
     margin: 3em 0;
 }
 
+.features div {
+    padding: 1.5em 0;
+}
+
 .features i {
     display: inline-block;
     width: 10%;
-
+    vertical-align: top;
 }
 
 .details p {
     display: inline-block;
     width: 90%;
-    margin: 1.5em 0;
+    /* padding: 1.5em 0; */
 }
 
 .details hr {
@@ -271,4 +290,41 @@ header * {
 .card-wide .blue-btn {
     float: right;
     padding: .5em 4em;
+}
+
+/* -----------------------TERZA SEZIONE----------------------- */
+
+/* .third {
+
+} */
+
+.photo {
+    display: inline-block;
+    width: 55%;
+}
+
+.partner {
+    display: inline-block;
+    width: 40%;
+    padding: 2em;
+    vertical-align: top;
+}
+
+.partner p {
+    padding: 2em 0;
+    line-height: 1.25rem;
+}
+
+/* -----------------------QUARTA SEZIONE----------------------- */
+/* .fourth {
+
+} */
+
+/* .instruments {
+
+} */
+
+.instruments p {
+    padding: 2em 0;
+    line-height: 1.4em;
 }
