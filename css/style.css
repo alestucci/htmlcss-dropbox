@@ -61,12 +61,12 @@ h2 {
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1.5em;
 }
 
 h4 {
-    font-size: 1.25em;
+    font-size: 1.1em;
     line-height: 2.5em;
 }
 
@@ -197,6 +197,10 @@ header * {
     border: 1px solid darkgrey;
 }
 
+.type span {
+    padding-left: .5em;
+}
+
 .details {
     height: 100%;
     border: 1px solid darkgrey;
@@ -211,9 +215,22 @@ header * {
 
 
 .details ul {
-    list-style-type: "\2713";
-    list-style-image: url(#);
+    list-style: none;
     margin-left: .8em;
+}
+
+.details li {
+    padding: 1em 0 1em .5em;
+}
+
+.details li:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+    color: #0161FF;
+    font-weight: 900;
 }
 
 .card-wide {
@@ -228,10 +245,17 @@ header * {
 
 .features i {
     display: inline-block;
+    width: 10%;
+
 }
 
-.features p {
+.details p {
     display: inline-block;
-    padding-left: 1em;
-    text-indent: -1em;
+    width: 90%;
+    margin: 1.5em 0;
+}
+
+.details hr {
+    width: 20%;
+    margin: 2em 0;
 }
