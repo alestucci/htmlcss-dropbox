@@ -39,7 +39,7 @@ html {
     display: inline-block;
     color: black;
     background-color: white;
-    padding: .5rem 1rem;
+    padding: .5rem 3rem;
     border: 1px solid black;
 }
 
@@ -95,9 +95,14 @@ h4 {
     background-color: #B4D0E7;
 }
 
+.bordeaux {
+    color: #61072B;
+}
+
 .half {
     width: 50%;
 }
+
 
 /* -----------------------HEADER----------------------- */
 
@@ -333,13 +338,21 @@ header * {
 }
 
 /* -----------------------SESTA SEZIONE----------------------- */
-
+.sixth {
+    height: 488px;
+    width: 100%;
+    background-color: yellow;
+}
 /* -----------------------SETTIMA SEZIONE----------------------- */
 .seventh {
-    line-height: 20em;
+    padding: 7em 0;
 }
 
-.seventh .container-narrow .half {
+.seventh .half {
+    line-height: 22.5em;
+}
+
+.middle {
     vertical-align: middle;
 }
 
@@ -371,6 +384,15 @@ header * {
     padding-right: 1em;
 }
 
+.hidden {
+    display: none;
+}
+
+.row:hover + .hidden {
+    display: block;
+}
+
+
 /* -----------------------FOOTER----------------------- */
 footer {
     background-color: black;
@@ -401,4 +423,10 @@ footer hr {
     height: 2px;
     color: grey;
     margin: 5em 0;
+}
+
+footer select {
+    background-color: black;
+    color: white;
+    border: 0;
 }
