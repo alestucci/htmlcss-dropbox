@@ -341,8 +341,36 @@ header * {
 .sixth {
     height: 488px;
     width: 100%;
-    background-color: yellow;
+    position: relative;
 }
+
+.big-square-l {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: tomato;
+}
+
+.big-square-r {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: blue;
+}
+
+.center-square {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 40%;
+    height: 100%;
+    background-color: green;
+}
+
 /* -----------------------SETTIMA SEZIONE----------------------- */
 .seventh {
     padding: 7em 0;
@@ -403,6 +431,10 @@ footer ul {
     list-style: none;
 }
 
+footer ul:first-child {
+    margin-bottom: 5em;
+}
+
 footer li {
     padding: .5em 0;
 }
@@ -422,7 +454,7 @@ footer hr {
     width: 15%;
     height: 2px;
     color: grey;
-    margin: 5em 0;
+    margin: 3em 0;
 }
 
 footer select {
