@@ -9,10 +9,10 @@ html {
 }
 
 /* LARGHEZZA PER PROVE */
-body {
+/* body {
     /* width: 100em;
     margin: 0 auto; */
-}
+} */
 
 .left {
     float: left;
@@ -326,16 +326,54 @@ header * {
 }
 
 /* -----------------------QUINTA SEZIONE----------------------- */
+.fifth {
+    padding: 3em 0;
+}
 
 /* -----------------------SESTA SEZIONE----------------------- */
 
 /* -----------------------SETTIMA SEZIONE----------------------- */
 .seventh {
-    height: 20em;
+    line-height: 20em;
 }
 
-.half * {
-    position: relative;
-    top: 50%;
-    /* transform: translate(0, -50%); */
+.seventh .container-narrow .half {
+    vertical-align: middle;
 }
+
+
+/* -----------------------OTTAVA SEZIONE----------------------- */
+.eight {
+    padding: 5em 0;
+}
+
+.eight h3 {
+    padding-bottom: 2em;
+}
+
+.row {
+    border-top: 2px solid lightgrey;
+    padding: 2em 0;
+}
+
+.row:last-child {
+    border-bottom: 2px solid lightgrey;
+}
+
+.row > h5 {
+    display: inline-block;
+}
+
+.row i {
+    text-align: right;
+    padding-right: 1em;
+}
+
+/* -----------------------FOOTER----------------------- */
+footer {
+    background-color: black;
+    color: white;
+    height: 40em;
+}
+
+
