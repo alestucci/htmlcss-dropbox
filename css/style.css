@@ -10,8 +10,8 @@ html {
 
 /* LARGHEZZA PER PROVE */
 /* body {
-    /* width: 100em;
-    margin: 0 auto; */
+    width: 100em;
+    margin: 0 auto;
 } */
 
 .left {
@@ -46,7 +46,7 @@ html {
 .container-wide {
     max-width: 1300px;
     margin: 0 auto;
-    padding-top: 4em;
+    padding: 4em 0;
 }
 
 .container-narrow {
@@ -282,7 +282,6 @@ header * {
 .details p {
     display: inline-block;
     width: 90%;
-    /* padding: 1.5em 0; */
 }
 
 .details hr {
@@ -327,7 +326,10 @@ header * {
 
 /* -----------------------QUINTA SEZIONE----------------------- */
 .fifth {
-    padding: 3em 0;
+    padding: 4em 0;
+}
+.fifth p {
+    padding-top: 2em;
 }
 
 /* -----------------------SESTA SEZIONE----------------------- */
@@ -373,7 +375,30 @@ header * {
 footer {
     background-color: black;
     color: white;
-    height: 40em;
 }
 
+footer ul {
+    list-style: none;
+}
 
+footer li {
+    padding: .5em 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.column-foot {
+    display: inline-block;
+    margin-right: 6em;
+    vertical-align: top;
+}
+
+footer hr {
+    width: 15%;
+    height: 2px;
+    color: grey;
+    margin: 5em 0;
+}
