@@ -165,6 +165,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 header * {
@@ -442,36 +443,40 @@ header * {
 
 /* -----------------------SESTA SEZIONE----------------------- */
 .sixth {
-    position: relative;
-    left: 0;
-    width: 100%;
-    height: 600px; /* SE NON LA INSERISCO IL BLOCCO HA ALTEZZA NULLA E NON CAPISCO IL MOTIVO */
+    width: 100vw;
+    height: 30vw;
     padding-bottom: 1em;
+    position: relative;
+    z-index: 0;
 }
 
 .big-square-l {
-    width: 30%;
-    height: 100%;
+    width: 30vw;
+    height: 30vw;
     position: absolute;
     top: 0;
     left: 0;
+    background-color: cadetblue;
 }
 
 .big-square-r {
-    width: 30%;
-    height: 100%;
+    width: 30vw;
+    height: 30vw;
     position: absolute;
     top: 0;
     right: 0;
+    background-color: yellow;
 }
 
 .center-square {
     position: absolute;
     top: 0;
     left: 30%;
-    width: 40%;
+    width: 40vw;
+    height: 30vw;
     padding: 5%;
     overflow: scroll;
+    background-color: #F5F5F5;
 }
 
 .frame {
