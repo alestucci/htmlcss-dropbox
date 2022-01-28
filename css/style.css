@@ -70,9 +70,16 @@ a.blue-btn {
     margin: 0 auto;
 }
 
+.card {
+    display: inline-block;
+    width: 27%;
+    padding-bottom: 4em;
+    vertical-align: top;
+    margin: 0 2em;
+}
+
 h1 {
     font-size: 4em;
-    /* line-height: 1.5em; */
 }
 
 h2 {
@@ -98,17 +105,13 @@ h4 {
     text-decoration: underline;
 }
 
-.grey {
-    color: grey;
-    font-size: .9em;
-}
-
 .noborder {
     border: 0;
 }
 
-.sugar {
-    background-color: #B4D0E7;
+.grey {
+    color: grey;
+    font-size: .9em;
 }
 
 .bordeaux {
@@ -117,6 +120,10 @@ h4 {
 
 .black {
     color: black;
+}
+
+.bg-sugar {
+background-color: #B4D0E7;
 }
 
 .bg-bordeaux {
@@ -147,6 +154,10 @@ h4 {
     background-color: #F5F5F5;
 }
 
+.bg-green {
+    background-color: #CFE9CD;
+}
+
 .half {
     width: 50%;
 }
@@ -154,6 +165,14 @@ h4 {
 .wide {
     width: 100%;
 }
+
+.middle {
+    vertical-align: middle;
+}
+
+
+
+
 /* -----------------------HEADER----------------------- */
 
 header {
@@ -176,12 +195,6 @@ header * {
     padding: 0 1em;
     width: 100%;
     height: 100%;
-}
-
-.menu > * {
-    position: relative;
-    top: 50%;
-    transform: translate(0, -50%);
 }
 
 .menu ul {
@@ -245,6 +258,10 @@ header * {
     border-bottom: none;
 }
 
+
+
+
+
 /* -----------------------PRIMA SEZIONE----------------------- */
 
 .first {
@@ -270,6 +287,14 @@ header * {
 .cntnr.right {
     width: 70%;
 }
+
+.arrow {
+    font-size: 3em;
+}
+
+
+
+
 
 /* -----------------------SECONDA SEZIONE----------------------- */
 
@@ -298,11 +323,11 @@ header * {
 }
 
 .active {
-    border: 4px solid blue;
+    border: 4px solid #0161FF;
 }
 
 .inactive {
-    border: 1px solid grey;
+    border: 1px solid #d2d2d5;
 }
 
 .price-list {
@@ -311,18 +336,10 @@ header * {
     margin-right: -2em;
 }
 
-.card {
-    display: inline-block;
-    width: 27%;
-    padding-bottom: 4em;
-    vertical-align: top;
-    margin: 0 2em;
-}
-
 .type {
     text-align: center;
     line-height: 3rem;
-    border: 1px solid darkgrey;
+    border: 1px solid #d0d0d3;
 }
 
 .type span {
@@ -330,7 +347,7 @@ header * {
 }
 
 .details {
-    border: 1px solid darkgrey;
+    border: 1px solid #d0d0d3;
     border-top: none;
     padding: 2em;
 }
@@ -403,6 +420,10 @@ header * {
     padding: .5em 4em;
 }
 
+
+
+
+
 /* -----------------------TERZA SEZIONE----------------------- */
 .third{
     padding: 3em 0;
@@ -424,6 +445,10 @@ header * {
     line-height: 1.25rem;
 }
 
+
+
+
+
 /* -----------------------QUARTA SEZIONE----------------------- */
 .fourth h2 {
     padding: 1em 0;
@@ -433,6 +458,10 @@ header * {
     line-height: 1.4em;
 }
 
+
+
+
+
 /* -----------------------QUINTA SEZIONE----------------------- */
 .fifth {
     padding: 4em 0;
@@ -440,6 +469,10 @@ header * {
 .fifth p {
     padding-top: 2em;
 }
+
+
+
+
 
 /* -----------------------SESTA SEZIONE----------------------- */
 .sixth {
@@ -521,9 +554,9 @@ header * {
     transform: translate(-50%, -50%);
 }
 
-.bg-green {
-    background-color: #CFE9CD;
-}
+
+
+
 
 /* -----------------------SETTIMA SEZIONE----------------------- */
 .seventh {
@@ -534,9 +567,8 @@ header * {
     line-height: 22.5em;
 }
 
-.middle {
-    vertical-align: middle;
-}
+
+
 
 
 /* -----------------------OTTAVA SEZIONE----------------------- */
@@ -576,6 +608,9 @@ header * {
 .row:hover .compressed {
     display: none;
 }
+
+
+
 
 
 /* -----------------------FOOTER----------------------- */
