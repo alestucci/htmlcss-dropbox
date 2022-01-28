@@ -5,26 +5,16 @@
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
 }
 
-/* LARGHEZZA PER PROVE */
-/* body {
-    width: 100em;
-    margin: 0 auto;
-} */
+body {
+    margin-top: 5em;
+}
 
 a {
     color: #0C67FF;
-}
-
-a:visited {
-    color: inherit;
-}
-
-a.blue-btn {
-    color: white;
 }
 
 .left {
@@ -53,12 +43,20 @@ a.blue-btn {
     filter: brightness(120%);
 }
 
+a.blue-btn {
+    color: white;
+}
+
 .white-btn {
     display: inline-block;
     color: black;
     background-color: white;
     padding: .5rem 3rem;
     border: 1px solid black;
+}
+
+.white-btn:hover {
+    background-color: lightgray;
 }
 
 .container-wide {
@@ -74,7 +72,7 @@ a.blue-btn {
 
 h1 {
     font-size: 4em;
-    line-height: 1.5em;
+    /* line-height: 1.5em; */
 }
 
 h2 {
@@ -117,6 +115,10 @@ h4 {
     color: #61072B;
 }
 
+.black {
+    color: black;
+}
+
 .bg-bordeaux {
     background-color: #61072B;
 }
@@ -149,12 +151,20 @@ h4 {
     width: 50%;
 }
 
+.wide {
+    width: 100%;
+}
 /* -----------------------HEADER----------------------- */
 
 header {
     width: 100%;
     margin: 0 auto;
     height: 5em;
+    min-width: 1230px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 header * {
@@ -183,11 +193,55 @@ header * {
 .menu li {
     padding: 0 1.5em;
     vertical-align: middle;
+    border-bottom: 1px solid transparent;
+}
+
+.menu a:hover {
+    border-bottom: 1px solid black;
+}
+
+.menu .logo:hover,
+.menu .blue-btn:hover {
+    border-bottom: none;
+}
+
+.menu li img {
+    vertical-align: text-bottom;
 }
 
 .menu a {
     color: black;
     text-decoration: none;
+}
+
+.menu .blue-btn {
+    color: white;
+    line-height: 1.5rem;
+}
+
+.supporto {
+    display: none;
+}
+
+.submenu:hover .supporto {
+    display: block;
+    position: absolute;
+}
+
+.supporto li {
+    padding: 0 1em;
+    border: none;
+    display: block;
+    background-color: white;
+    line-height: 3em;
+}
+
+.supporto li:hover {
+    background-color: lightgray;
+}
+
+.supporto li:hover a {
+    border-bottom: none;
 }
 
 /* -----------------------PRIMA SEZIONE----------------------- */
@@ -205,7 +259,7 @@ header * {
 }
 
 .cntnr.left > * {
-    margin: 1em 0;
+    margin: 1rem 0;
 }
 
 .cntnr.left p {
@@ -219,12 +273,12 @@ header * {
 /* -----------------------SECONDA SEZIONE----------------------- */
 
 #second {
-    padding: 11em 0;
+    padding: 8em 0;
 }
 
 .select {
     line-height: 1em;
-    margin: 1em 0;
+    margin: 2em 0;
 }
 
 .select > * {
@@ -349,7 +403,9 @@ header * {
 }
 
 /* -----------------------TERZA SEZIONE----------------------- */
-
+.third{
+    padding: 3em 0;
+}
 .photo {
     display: inline-block;
     width: 55%;
@@ -368,7 +424,9 @@ header * {
 }
 
 /* -----------------------QUARTA SEZIONE----------------------- */
-
+.fourth h2 {
+    padding: 1em 0;
+}
 .instruments p {
     padding: 2em 0;
     line-height: 1.4em;
@@ -385,8 +443,10 @@ header * {
 /* -----------------------SESTA SEZIONE----------------------- */
 .sixth {
     position: relative;
-    height: 100%;
+    left: 0;
     width: 100%;
+    height: 600px; /* SE NON LA INSERISCO IL BLOCCO HA ALTEZZA NULLA E NON CAPISCO IL MOTIVO */
+    padding-bottom: 1em;
 }
 
 .big-square-l {
@@ -395,7 +455,6 @@ header * {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: tomato;
 }
 
 .big-square-r {
@@ -404,7 +463,6 @@ header * {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: blue;
 }
 
 .center-square {
@@ -412,8 +470,22 @@ header * {
     top: 0;
     left: 30%;
     width: 40%;
-    /* height: 100%; */
     padding: 5%;
+    overflow: scroll;
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #A1D39B;
+    width: 90%;
+    height: 90%;
+}
+
+.customer {
+    height: 100%;
 }
 
 .center-square img {
@@ -445,7 +517,7 @@ header * {
 }
 
 .bg-green {
-    background-color: #A1D39B;
+    background-color: #CFE9CD;
 }
 
 /* -----------------------SETTIMA SEZIONE----------------------- */
@@ -480,21 +552,24 @@ header * {
     border-bottom: 2px solid lightgrey;
 }
 
-.row > h5 {
+.row h5 {
     display: inline-block;
 }
 
-.row i {
-    text-align: right;
-    padding-right: 1em;
+.row p {
+    padding-top: 1em;
 }
 
-.hidden {
+.expanded {
     display: none;
 }
 
-.row:hover + .hidden {
+.row:hover .expanded{
     display: block;
+}
+
+.row:hover .compressed {
+    display: none;
 }
 
 
